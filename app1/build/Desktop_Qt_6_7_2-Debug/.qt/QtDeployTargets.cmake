@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_appapp1_FILE /home/krzysiek89/Desktop/QT_aplikacje/QML1_random_number_generator/app1/build/Desktop_Qt_6_7_2-Debug/appapp1)
+set(__QT_DEPLOY_TARGET_appapp1_TYPE EXECUTABLE)

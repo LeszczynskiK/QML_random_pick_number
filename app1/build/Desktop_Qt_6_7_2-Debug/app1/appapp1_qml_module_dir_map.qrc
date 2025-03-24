@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/qt/qml/app1">/home/krzysiek89/Desktop/QT_aplikacje/QML1_random_number_generator/app1/build/Desktop_Qt_6_7_2-Debug/app1</file>
+
+  </qresource>
+</RCC>

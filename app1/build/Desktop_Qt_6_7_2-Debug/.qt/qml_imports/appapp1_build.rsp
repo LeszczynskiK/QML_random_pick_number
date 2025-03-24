@@ -1,0 +1,14 @@
+-rootPath
+/home/krzysiek89/Desktop/QT_aplikacje/QML1_random_number_generator/app1
+-cmake-output
+-output-file
+/home/krzysiek89/Desktop/QT_aplikacje/QML1_random_number_generator/app1/build/Desktop_Qt_6_7_2-Debug/.qt/qml_imports/appapp1_build.cmake
+-importPath
+/home/krzysiek89/Desktop/QT_aplikacje/QML1_random_number_generator/app1/build/Desktop_Qt_6_7_2-Debug/app1
+-importPath
+/home/krzysiek89/Desktop/QT_aplikacje/QML1_random_number_generator/app1/build/Desktop_Qt_6_7_2-Debug
+-importPath
+/home/krzysiek89/Qt/6.7.2/gcc_64/./qml
+-qrcFiles
+/home/krzysiek89/Desktop/QT_aplikacje/QML1_random_number_generator/app1/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qmake_app1.qrc
+/home/krzysiek89/Desktop/QT_aplikacje/QML1_random_number_generator/app1/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/appapp1_raw_qml_0.qrc
