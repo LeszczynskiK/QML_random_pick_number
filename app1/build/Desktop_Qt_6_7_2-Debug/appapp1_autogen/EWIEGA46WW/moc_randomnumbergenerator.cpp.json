@@ -1,0 +1,57 @@
+{
+    "classes": [
+        {
+            "className": "RandomNumberGenerator",
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "min",
+                            "type": "int"
+                        },
+                        {
+                            "name": "max",
+                            "type": "int"
+                        }
+                    ],
+                    "name": "generateNumber",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "randomNumber",
+                    "notify": "randomNumberChanged",
+                    "read": "randomNumber",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "RandomNumberGenerator",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "randomNumberChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "randomnumbergenerator.h",
+    "outputRevision": 68
+}
