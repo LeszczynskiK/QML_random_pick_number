@@ -1,6 +1,7 @@
 <RCC>
   <qresource prefix="/app1/">
     <file alias="Main.qml">/home/krzysiek89/Desktop/QT_aplikacje/QML1_random_number_generator/app1/Main.qml</file>
+    <file alias="resources.qrc">/home/krzysiek89/Desktop/QT_aplikacje/QML1_random_number_generator/app1/resources.qrc</file>
   </qresource>
 </RCC>
 

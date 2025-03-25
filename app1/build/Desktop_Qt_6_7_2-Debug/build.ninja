@@ -182,7 +182,7 @@ build all_qmllint_module: phony appapp1_qmllint_module
 #############################################
 # Utility command for appapp1_tooling
 
-build appapp1_tooling: phony app1/Main.qml
+build appapp1_tooling: phony app1/Main.qml app1/resources.qrc
 
 
 #############################################
@@ -317,7 +317,7 @@ build .rcc/qmlcache/appapp1_Main_qml.cpp | ${cmake_ninja_workdir}.rcc/qmlcache/a
 #############################################
 # Custom command for .qt/rcc/qrc_appapp1_raw_qml_0.cpp
 
-build .qt/rcc/qrc_appapp1_raw_qml_0.cpp | ${cmake_ninja_workdir}.qt/rcc/qrc_appapp1_raw_qml_0.cpp: CUSTOM_COMMAND /home/krzysiek89/Desktop/QT_aplikacje/QML1_random_number_generator/app1/Main.qml .qt/rcc/appapp1_raw_qml_0.qrc /home/krzysiek89/Qt/6.7.2/gcc_64/./libexec/rcc || appapp1_autogen appapp1_autogen_timestamp_deps appapp1_qmlimportscan appapp1_tooling
+build .qt/rcc/qrc_appapp1_raw_qml_0.cpp | ${cmake_ninja_workdir}.qt/rcc/qrc_appapp1_raw_qml_0.cpp: CUSTOM_COMMAND /home/krzysiek89/Desktop/QT_aplikacje/QML1_random_number_generator/app1/Main.qml /home/krzysiek89/Desktop/QT_aplikacje/QML1_random_number_generator/app1/resources.qrc .qt/rcc/appapp1_raw_qml_0.qrc /home/krzysiek89/Qt/6.7.2/gcc_64/./libexec/rcc || appapp1_autogen appapp1_autogen_timestamp_deps appapp1_qmlimportscan appapp1_tooling
   COMMAND = cd /home/krzysiek89/Desktop/QT_aplikacje/QML1_random_number_generator/app1/build/Desktop_Qt_6_7_2-Debug && /home/krzysiek89/Qt/6.7.2/gcc_64/./libexec/rcc --output /home/krzysiek89/Desktop/QT_aplikacje/QML1_random_number_generator/app1/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_appapp1_raw_qml_0.cpp --name appapp1_raw_qml_0 /home/krzysiek89/Desktop/QT_aplikacje/QML1_random_number_generator/app1/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/appapp1_raw_qml_0.qrc --no-zstd
   DESC = Running rcc for resource appapp1_raw_qml_0
   restat = 1
@@ -376,6 +376,15 @@ build CMakeFiles/appapp1_qmllint_module | ${cmake_ninja_workdir}CMakeFiles/appap
 build app1/Main.qml | ${cmake_ninja_workdir}app1/Main.qml: CUSTOM_COMMAND /home/krzysiek89/Desktop/QT_aplikacje/QML1_random_number_generator/app1/Main.qml
   COMMAND = cd /home/krzysiek89/Desktop/QT_aplikacje/QML1_random_number_generator/app1 && /home/krzysiek89/Qt/Tools/CMake/bin/cmake -E copy /home/krzysiek89/Desktop/QT_aplikacje/QML1_random_number_generator/app1/Main.qml /home/krzysiek89/Desktop/QT_aplikacje/QML1_random_number_generator/app1/build/Desktop_Qt_6_7_2-Debug/app1/Main.qml
   DESC = Copying Main.qml to /home/krzysiek89/Desktop/QT_aplikacje/QML1_random_number_generator/app1/build/Desktop_Qt_6_7_2-Debug/app1/Main.qml
+  restat = 1
+
+
+#############################################
+# Custom command for app1/resources.qrc
+
+build app1/resources.qrc | ${cmake_ninja_workdir}app1/resources.qrc: CUSTOM_COMMAND /home/krzysiek89/Desktop/QT_aplikacje/QML1_random_number_generator/app1/resources.qrc
+  COMMAND = cd /home/krzysiek89/Desktop/QT_aplikacje/QML1_random_number_generator/app1 && /home/krzysiek89/Qt/Tools/CMake/bin/cmake -E copy /home/krzysiek89/Desktop/QT_aplikacje/QML1_random_number_generator/app1/resources.qrc /home/krzysiek89/Desktop/QT_aplikacje/QML1_random_number_generator/app1/build/Desktop_Qt_6_7_2-Debug/app1/resources.qrc
+  DESC = Copying resources.qrc to /home/krzysiek89/Desktop/QT_aplikacje/QML1_random_number_generator/app1/build/Desktop_Qt_6_7_2-Debug/app1/resources.qrc
   restat = 1
 
 

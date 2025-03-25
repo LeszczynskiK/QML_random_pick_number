@@ -1,14 +1,14 @@
 {
-	"backtrace" : 5,
+	"backtrace" : 4,
 	"backtraceGraph" : 
 	{
 		"commands" : 
 		[
-			"add_custom_target",
-			"_qt_internal_target_enable_qmllint",
+			"add_library",
 			"qt6_target_qml_sources",
 			"qt6_add_qml_module",
-			"qt_add_qml_module"
+			"qt_add_qml_module",
+			"target_sources"
 		],
 		"files" : 
 		[
@@ -21,49 +21,43 @@
 				"file" : 1
 			},
 			{
-				"command" : 4,
+				"command" : 3,
 				"file" : 1,
-				"line" : 15,
+				"line" : 17,
 				"parent" : 0
 			},
 			{
-				"command" : 3,
+				"command" : 2,
 				"file" : 0,
 				"line" : 780,
 				"parent" : 1
 			},
 			{
-				"command" : 2,
+				"command" : 1,
 				"file" : 0,
 				"line" : 647,
 				"parent" : 2
 			},
 			{
-				"command" : 1,
+				"command" : 0,
 				"file" : 0,
-				"line" : 2553,
+				"line" : 2750,
 				"parent" : 3
 			},
 			{
-				"command" : 0,
+				"command" : 4,
 				"file" : 0,
-				"line" : 998,
-				"parent" : 4
+				"line" : 2753,
+				"parent" : 3
 			}
 		]
 	},
-	"dependencies" : 
-	[
-		{
-			"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df"
-		}
-	],
 	"folder" : 
 	{
-		"name" : "QtInternalTargets/QmlLinter"
+		"name" : "QtInternalTargets"
 	},
-	"id" : "appapp1_qmllint_json::@6890427a1f51a3e7e1df",
-	"name" : "appapp1_qmllint_json",
+	"id" : "appapp1_tooling::@6890427a1f51a3e7e1df",
+	"name" : "appapp1_tooling",
 	"paths" : 
 	{
 		"build" : ".",
@@ -75,14 +69,16 @@
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				1
+				2,
+				3
 			]
 		}
 	],
@@ -91,15 +87,27 @@
 		{
 			"backtrace" : 5,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2-Debug/CMakeFiles/appapp1_qmllint_json",
+			"path" : "build/Desktop_Qt_6_7_2-Debug/app1/Main.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_7_2-Debug/app1/resources.qrc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2-Debug/CMakeFiles/appapp1_qmllint_json.rule",
+			"path" : "build/Desktop_Qt_6_7_2-Debug/app1/Main.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_7_2-Debug/app1/resources.qrc.rule",
 			"sourceGroupIndex" : 1
 		}
 	],
-	"type" : "UTILITY"
+	"type" : "INTERFACE_LIBRARY"
 }

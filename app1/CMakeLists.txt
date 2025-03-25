@@ -6,9 +6,9 @@ project(app1 VERSION 0.1 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17) # set cpp standard
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 6.5 REQUIRED COMPONENTS Quick)
+find_package(Qt6 6.7 REQUIRED COMPONENTS Quick)
 
-qt_standard_project_setup(REQUIRES 6.5) #qt standard
+qt_standard_project_setup(REQUIRES 6.7) #qt standard
 
 qt_add_executable(appapp1
     main.cpp #callable file
@@ -23,6 +23,8 @@ qt_add_qml_module(appapp1
     SOURCES #addition sources to add here
         randomnumbergenerator.h
         randomnumbergenerator.cpp
+    RESOURCES #resources(photos to background etc)
+        resources.qrc
 )
 
 

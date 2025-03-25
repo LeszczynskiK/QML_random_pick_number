@@ -18,6 +18,17 @@
                         ],
                         "name": "generateNumber",
                         "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "guess",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "checkGuess",
+                        "returnType": "void"
                     }
                 ],
                 "object": true,
@@ -35,6 +46,34 @@
                         "stored": true,
                         "type": "int",
                         "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "result",
+                        "notify": "resultChanged",
+                        "read": "result",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "showNumber",
+                        "notify": "showNumberChanged",
+                        "read": "showNumber",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
                     }
                 ],
                 "qualifiedClassName": "RandomNumberGenerator",
@@ -42,6 +81,16 @@
                     {
                         "access": "public",
                         "name": "randomNumberChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "resultChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "showNumberChanged",
                         "returnType": "void"
                     }
                 ],
