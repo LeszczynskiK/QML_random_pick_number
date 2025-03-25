@@ -20,9 +20,10 @@ ApplicationWindow {
     TextField {
         id: minField         // Unique ID for referencing this field
         placeholderText: "Min value"  // Placeholder text shown when empty
-        x: 50               // X position (from the left edge of the window)
+        x: 20               // X position (from the left edge of the window)
         y: 50               // Y position (from the top edge of the window)
         width: 300          // Width of the text field
+        height: 60          //  Height of text field
         inputMethodHints: Qt.ImhDigitsOnly  // Restricts input to digits only
     }
 
@@ -30,19 +31,20 @@ ApplicationWindow {
     TextField {
         id: maxField         // Unique ID for referencing this field
         placeholderText: "Max value"  // Placeholder text shown when empty
-        x: 50               // X position
-        y: 100              // Y position (50 pixels below minField)
+        x: 20               // X position
+        y: 130              // Y position (50 pixels below minField)
         width: 300          // Width of the text field
+        height: 60          //  Height of text field
         inputMethodHints: Qt.ImhDigitsOnly  // Restricts input to digits only
     }
 
     // Button to generate a random number (number is generated but not shown yet)
     Button {
         text: "Generate number"  // Text displayed on the button
-        x: 135              // X position (roughly centered relative to text fields)
-        y: 150              // Y position
+        x: 20             // X position (roughly centered relative to text fields)
+        y: 220              // Y position
         width: 130          // Button width
-        height: 40          // Button height
+        height: 70          // Button height
         onClicked: {        // Function triggered when the button is clicked
             let minValue = parseInt(minField.text);  // Convert minField text to an integer
             let maxValue = parseInt(maxField.text);  // Convert maxField text to an integer
@@ -57,28 +59,29 @@ ApplicationWindow {
     Label {
         id: generatedNumberLabel
         text: randomNumberGenerator.showNumber ? "Generated number: " + randomNumberGenerator.randomNumber : "Generated number: ?"  // Show number only if showNumber is true
-        x: 120              // X position (approximately centered)
-        y: 210              // Y position
-        font.pixelSize: 18  // Font size in pixels
+        x: 340             // X position (approximately centered)
+        y: 70             // Y position
+        font.pixelSize: 36  // Font size in pixels
     }
 
     // Text field for entering the user's guess
     TextField {
         id: guessField       // Unique ID for referencing this field
         placeholderText: "Your guess"  // Placeholder text shown when empty
-        x: 50               // X position
-        y: 250              // Y position
+        x: 340              // X position
+        y: 330             // Y position
         width: 300          // Width of the text field
+        height: 60          //  Height of text field
         inputMethodHints: Qt.ImhDigitsOnly  // Restricts input to digits only
     }
 
     // Button to check the user's guess and reveal the generated number
     Button {
         text: "Check Guess"  // Text displayed on the button
-        x: 135              // X position (roughly centered)
-        y: 300              // Y position
+        x: 20              // X position (roughly centered)
+        y: 330            // Y position
         width: 130          // Button width
-        height: 40          // Button height
+        height: 60          // Button height
         onClicked: {        // Function triggered when the button is clicked
             let guess = parseInt(guessField.text);  // Convert guessField text to an integer
             if (!isNaN(guess)) {
@@ -91,8 +94,8 @@ ApplicationWindow {
     Label {
         id: resultLabel      // Unique ID for referencing this label
         text: randomNumberGenerator.result  // Display the result ("Success" or "Failure")
-        x: 120              // X position (approximately centered)
-        y: 350              // Y position
-        font.pixelSize: 18  // Font size in pixels
+        x: 340             // X position (approximately centered)
+        y: 150             // Y position
+        font.pixelSize: 36  // Font size in pixels
     }
 }
