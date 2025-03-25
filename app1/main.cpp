@@ -1,7 +1,7 @@
 #include <QGuiApplication>         // Class for managing the GUI application
 #include <QQmlApplicationEngine>   // Engine for loading and running QML
 #include <QQmlContext>            // Allows passing C++ objects to QML
-#include "randomnumbergenerator.h" // Header file for the RandomNumberGenerator class
+#include "randomnumbergenerator.h"
 
 int main(int argc, char *argv[]) {
     // Create an instance of the GUI application
